@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Estádio Seguro - Alertas Gerais</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- DataTables -->
+  <link rel="stylesheet" href="../plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="../plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../dist/css/adminlte.min.css">
+  <!-- Select2 -->
+  <link rel="stylesheet" href="../plugins/select2/css/select2.min.css">
+  <link rel="stylesheet" href="../plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../dist/css/adminlte.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../dist/css/custom.css">
+</head>
+
+<body class="hold-transition sidebar-mini dark-mode layout-fixed">
+  <div class="wrapper">
+
+    <!-- Preloader -->
+    <div class="preloader flex-column justify-content-center align-items-center">
+      <img class="animation__shake" src="../dist/img/ico.png" alt="Estádio Seguro" height="90" width="90">
+    </div>
+
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand navbar-dark">
+      <!-- Left navbar links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+          <a href="index.html" class="nav-link">Pagina Inicial</a>
+        </li>
+      </ul>
+
+      <!-- Right navbar links -->
+      <ul class="navbar-nav ml-auto">
+        <!-- Navbar Search -->
+        <li class="nav-item">
+          <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+            <i class="fas fa-search"></i>
+          </a>
+          <div class="navbar-search-block">
+            <form class="form-inline">
+              <div class="input-group input-group-sm">
+                <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+                <div class="input-group-append">
+                  <button class="btn btn-navbar" type="submit">
+                    <i class="fas fa-search"></i>
+                  </button>
+                  <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                    <i class="fas fa-times"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </li>
+
+      </ul>
+    </nav>
+    <!-- /.navbar -->
+
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+      <!-- Brand Logo -->
+      <a href="./index.html" class="brand-link">
+        <span class="brand-text font-weight-light"><img src="../dist/img/logo-branco.png" height="30" /></span>
+      </a>
+
+      <!-- Sidebar -->
+      <div class="sidebar">
+
+        <!-- Sidebar Menu -->
+        <nav class="mt-2">
+          <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+            <li class="nav-header">PAINEL</li>
+            <li class="nav-item menu-open">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-tachometer-alt"></i>
+                <p>
+                  Painel de Controle
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="/index.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Escolher partida</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-header">PARTIDA</li>
+            <li class="nav-item menu-open">
+              <a href="#" class="nav-link active">
+                <i class="nav-icon fas fa-tachometer-alt"></i>
+                <p>
+                  Partida 7130
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="./match.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Consciência Situacional</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="/pages/alerts.html" class="nav-link active">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Alertas Gerais - Estádio</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="/pages/photo.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Pesquisa Foto</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="/pages/matches-history.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Histórico de Partidas</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="/pages/data.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Extração de Relatório</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <!-- /.sidebar-menu -->
+      </div>
+      <!-- /.sidebar -->
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+      <!-- Content Header (Page header) -->
+      <div class="content-header">
+        <div class="container-fluid">
+          <div class="row mb-2">
+            <div class="col-sm-6">
+              <h1 class="m-0">Alertas Gerais</h1>
+            </div><!-- /.col -->
+            <div class="col-sm-6">
+              <ol class="breadcrumb float-sm-right">
+                <li class="breadcrumb-item"><a href="#">Partida 7130</a></li>
+                <li class="breadcrumb-item active">Alertas Gerais</li>
+              </ol>
+            </div><!-- /.col -->
+          </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+      </div>
+      <!-- /.content-header -->
+
+      <!-- Main content -->
+      <section class="content">
+        <div class="container-fluid">
+          <!-- Small boxes (Stat box) -->
+          <div class="row mb-3">
+            <div class="col-lg-4">
+
+              <div class="card h-100 card-primary card-outline">
+                <div class="card-body box-profile">
+                  <h3 class="profile-username text-center">
+                    <small>Código: 452rf747</small>
+                  </h3>
+                  <ul class="list-group list-group-unbordered mb-0 mt-4">
+                    <li class="list-group-item">
+                      <b>Data/Hora</b> <span class="float-right">01/06/2023 - 21:30</span>
+                    </li>
+                    <li class="list-group-item">
+                      <b>Local</b> <span class="float-right">Rio de Janeiro/RJ</span>
+                    </li>
+                    <li class="list-group-item">
+                      <b>Sistema</b> <span class="float-right">FutebolCard</span>
+                    </li>
+                    <li class="list-group-item">
+                      <b>Ingressos Vendidos</b> <span class="float-right"><strong>60.512</strong></span>
+                    </li>
+                    <li class="list-group-item">
+                      <b>Ingressos registrados</b> <span class="float-right"><strong>54.123</strong></span>
+                    </li>
+                    <li class="list-group-item">
+                      <b>Vendas bloqueadas</b> <span class="float-right"><strong>5.391</strong></span>
+                    </li>
+                    <!-- <div class="card-tickets">
+                    <li class="list-group-item">
+                      <b>Ingressos vendidos</b><span>60.512</span>
+                    </li>
+                    <li class="list-group-item">
+                      <b>Ingressos registrados</b><span>Aguardando...</span>
+                    </li>
+                    <li class="list-group-item">
+                      <b>Vendas bloqueadas</b><span>Aguardando...</span>
+                    </li>
+                  </div> -->
+                  </ul>
+
+                </div>
+                <!-- /.card-body -->
+              </div>
+
+            </div>
+            <div class="col-lg">
+
+              <div class="card h-100 card-primary card-outline">
+                <div class="card-body box-profile">
+                  <h3 class="profile-username text-center">Partida</h3>
+                  <h5 class="text-center mt-3">Campeonato Brasileiro</h5>
+                  <div class="row no-gutters justify-content-center align-items-center campeonato mt-3">
+                    <div class="col text-right">
+                      <h4 class="d-inline-block">FLU</h4> &nbsp; <img src="/dist/img/flu.png" alt="" height="60">
+                    </div>
+                    <div class="col-1 text-center"><span>x</span></div>
+                    <div class="col"><img src="/dist/img/fla.png" alt="" height="60"> &nbsp; <h4 class="d-inline-block">
+                        FLA</h4>
+                    </div>
+                  </div>
+                  <h6 class="text-center mt-3">Estádio Jornalista Mario Filho - Maracanã</h6>
+                </div>
+                <!-- /.card-body -->
+              </div>
+
+            </div>
+            <div class="col-lg">
+
+              <div class="card h-100 card-primary card-outline">
+                <div class="card-body box-profile">
+                  <h3 class="profile-username text-center">Lista de Ocorrências</h3>
+                  <form action="">
+                    <ul class="list-group list-group-unbordered mb-0 mt-4">
+                      <li class="list-group-item">
+                        <label class="p-0 m-0 w-100" for="procurado"><input type="checkbox" checked id="procurado">
+                          &nbsp;<b>Procurado</b> <span class="float-right">1,322</span></label>
+                      </li>
+                      <li class="list-group-item">
+                        <label class="p-0 m-0 w-100" for="impedido"><input type="checkbox" checked id="impedido">
+                          &nbsp;<b>Impedido</b> <span class="float-right">1,322</span></label>
+                      </li>
+                      <li class="list-group-item">
+                        <label class="p-0 m-0 w-100" for="desaparecido"><input type="checkbox" checked
+                            id="desaparecido"> &nbsp;<b>Desaparecido</b> <span class="float-right">1,322</span></label>
+                      </li>
+                    </ul>
+                    <p class="text-center mt-4">Total: <strong>3.966</strong></p>
+                  </form>
+                </div>
+                <!-- /.card-body -->
+              </div>
+
+            </div>
+            <div class="col-lg">
+
+              <div class="card h-100 card-primary card-outline">
+                <div class="card-body box-profile">
+                  <h3 class="profile-username text-center">Portões de Acesso</h3>
+                  <ul class="list-group list-group-unbordered mb-0 mt-4">
+                    <li class="list-group-item">
+                      <label class="p-0 m-0 w-100" for="portao-a"><input type="checkbox" checked id="portao-a">
+                        &nbsp;<b>Portão A</b> <span class="float-right">1,322</span></label>
+                    </li>
+                    <li class="list-group-item">
+                      <label class="p-0 m-0 w-100" for="portao-b"><input type="checkbox" checked id="portao-b">
+                        &nbsp;<b>Portão B</b> <span class="float-right">1,322</span></label>
+                    </li>
+                    <li class="list-group-item">
+                      <label class="p-0 m-0 w-100" for="portao-c"><input type="checkbox" checked id="portao-c">
+                        &nbsp;<b>Portão C</b> <span class="float-right">1,322</span></label>
+                    </li>
+                  </ul>
+                </div>
+                <!-- /.card-body -->
+              </div>
+
+            </div>
+          </div>
+          <!-- /.row -->
+
+          <div class="row">
+            <div class="col-lg-12">
+
+              <div class="card">
+                <!-- /.card-header -->
+                <div class="card-body">
+                  <table id="table-ocorrencias" class="table table-hover table-bordered projects">
+                    <thead>
+                      <tr>
+                        <th>Data/Hora</th>
+                        <th>Documento</th>
+                        <th>+Info</th>
+                        <th>Foto</th>
+                        <th>Nome/Descrição</th>
+                        <th>Ocorrência</th>
+                        <th>UF Mandado</th>
+                        <th>Nº Processo</th>
+                        <th>Link Mandado</th>
+                        <th>Nº Bilhete</th>
+                        <th>Portão</th>
+                        <th>Fechamento da Ocorrência</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+
+
+                      <tr data-ocorrencia="procurado">
+                        <td><span class="access-date text-gold">Aguardando...</span></td>
+                        <td><span class="document-cpf">092.982.804-67</span></td>
+                        <td><button class="btn btn-primary" type="button" data-toggle="modal"
+                            data-target="#modal-default" style="width: 120px;"><i class="fas fa-edit"></i> &nbsp;
+                            Detalhar</button></td>
+                        <td>
+                          <ul class="list-inline">
+                            <li class="list-inline-item">
+                              <img alt="Avatar" class="table-avatar" src="../dist/img/avatar.png">
+                            </li>
+                          </ul>
+                        </td>
+                        <td>ROSILDO DOS SANTOS SILVA</td>
+                        <td>PROCURADO</td>
+                        <td>PB</td>
+                        <td>08279831220218150001</td>
+                        <td><a href="https://portalbnmp.cnj.jus.br/#/resumo-peca/196159607/1/pesquisa-peca">Abrir link</a></td>
+                        <td>251f78f</td>
+                        <td>A</td>
+                        <td>
+                          <select class="form-control select2" style="width: 100%; max-width: 100px !important;">
+                            <option selected="selected">Pendente</option>
+                            <option>[1] Encaminhado à autoridade competente</option>
+                            <option>[2] Liberado ainda na abordagem policial</option>
+                          </select>
+                        </td>
+                      </tr>
+
+                      <tr data-ocorrencia="procurado">
+                        <td><span class="access-date text-gold">Aguardando...</span></td>
+                        <td><span class="document-cpf">666.252.624-04</span></td>
+                        <td><button class="btn btn-primary" type="button" data-toggle="modal"
+                            data-target="#modal-default" style="width: 120px;"><i class="fas fa-edit"></i> &nbsp;
+                            Detalhar</button></td>
+                        <td>
+                          <ul class="list-inline">
+                            <li class="list-inline-item">
+                              <img alt="Avatar" class="table-avatar" src="../dist/img/avatar.png">
+                            </li>
+                          </ul>
+                        </td>
+                        <td>FABIO FALCAO BEZERRA 0</td>
+                        <td>PROCURADO</td>
+                        <td>PB</td>
+                        <td>8649867820228150000</td>
+                        <td><a href="https://portalbnmp.cnj.jus.br/#/resumo-peca/196159607/1/pesquisa-peca">Abrir link</a></td>
+                        <td>8gfd14</td>
+                        <td>A</td>
+                        <td>
+                          <select class="form-control select2" style="width: 100%; max-width: 100px !important;">
+                            <option selected="selected">Pendente</option>
+                            <option>[1] Encaminhado à autoridade competente</option>
+                            <option>[2] Liberado ainda na abordagem policial</option>
+                          </select>
+                        </td>
+                      </tr>
+
+                      <tr data-ocorrencia="procurado">
+                        <td><span class="access-date text-gold">Aguardando...</span></td>
+                        <td><span class="document-cpf">904.127.292-53</span></td>
+                        <td><button class="btn btn-primary" type="button" data-toggle="modal"
+                            data-target="#modal-default" style="width: 120px;"><i class="fas fa-edit"></i> &nbsp;
+                            Detalhar</button></td>
+                        <td>
+                          <ul class="list-inline">
+                            <li class="list-inline-item">
+                              <img alt="Avatar" class="table-avatar" src="../dist/img/avatar.png">
+                            </li>
+                          </ul>
+                        </td>
+                        <td>DIONILTON FREITAS DA SILVA</td>
+                        <td>PROCURADO</td>
+                        <td>AM</td>
+                        <td>0228816-03.2012.8.04.0001</td>
+                        <td><a href="https://portalbnmp.cnj.jus.br/#/resumo-peca/196159607/1/pesquisa-peca">Abrir link</a></td>
+                        <td>hgy71</td>
+                        <td>A</td>
+                        <td>
+                          <select class="form-control select2" style="width: 100%; max-width: 100px !important;">
+                            <option selected="selected">Pendente</option>
+                            <option>[1] Encaminhado à autoridade competente</option>
+                            <option>[2] Liberado ainda na abordagem policial</option>
+                          </select>
+                        </td>
+                      </tr>
+
+                      <tr data-ocorrencia="procurado">
+                        <td><span class="access-date text-gold">Aguardando...</span></td>
+                        <td><span class="document-cpf">078.657.561-19</span></td>
+                        <td><button class="btn btn-primary" type="button" data-toggle="modal"
+                            data-target="#modal-default" style="width: 120px;"><i class="fas fa-edit"></i> &nbsp;
+                            Detalhar</button></td>
+                        <td>
+                          <ul class="list-inline">
+                            <li class="list-inline-item">
+                              <img alt="Avatar" class="table-avatar" src="../dist/img/avatar.png">
+                            </li>
+                          </ul>
+                        </td>
+                        <td>ISABELLY ARCAL SILVA</td>
+                        <td>DESAPARECIDA</td>
+                        <td>MA</td>
+                        <td>2678380</td>
+                        <td><a href="https://portalbnmp.cnj.jus.br/#/resumo-peca/196159607/1/pesquisa-peca">Abrir link</a></td>
+                        <td>lk52ytr8</td>
+                        <td>A</td>
+                        <td>
+                          <select class="form-control select2" style="width: 100%; max-width: 100px !important;">
+                            <option selected="selected">Pendente</option>
+                            <option>[1] Encaminhado à autoridade competente</option>
+                            <option>[2] Liberado ainda na abordagem policial</option>
+                          </select>
+                        </td>
+                      </tr>
+
+                      <tr data-ocorrencia="desaparecido">
+                        <td><span class="access-date text-gold">Aguardando...</span></td>
+                        <td><span class="document-cpf">005.438.642-00</span></td>
+                        <td><button class="btn btn-primary" type="button" data-toggle="modal"
+                            data-target="#modal-default" style="width: 120px;"><i class="fas fa-edit"></i> &nbsp;
+                            Detalhar</button></td>
+                        <td>
+                          <ul class="list-inline">
+                            <li class="list-inline-item">
+                              <img alt="Avatar" class="table-avatar" src="../dist/img/avatar.png">
+                            </li>
+                          </ul>
+                        </td>
+                        <td>THALYTA EMANUELLE SILVA DO NASCIMENTO</td>
+                        <td>DESAPARECIDA</td>
+                        <td>RJ</td>
+                        <td>2678380</td>
+                        <td></td>
+                        <td>55u4y</td>
+                        <td>B</td>
+                        <td>
+                          <select class="form-control select2" style="width: 100%; max-width: 100px !important;">
+                            <option selected="selected">Pendente</option>
+                            <option>[1] Encaminhado à autoridade competente</option>
+                            <option>[2] Liberado ainda na abordagem policial</option>
+                          </select>
+                        </td>
+                      </tr>
+
+                      <tr data-ocorrencia="desaparecido">
+                        <td><span class="access-date text-gold">Aguardando...</span></td>
+                        <td><span class="document-cpf">005.438.642-00</span></td>
+                        <td><button class="btn btn-primary" type="button" data-toggle="modal"
+                            data-target="#modal-default" style="width: 120px;"><i class="fas fa-edit"></i> &nbsp;
+                            Detalhar</button></td>
+                        <td>
+                          <ul class="list-inline">
+                            <li class="list-inline-item">
+                              <img alt="Avatar" class="table-avatar" src="../dist/img/avatar.png">
+                            </li>
+                          </ul>
+                        </td>
+                        <td>THALYTA EMANUELLE SILVA DO NASCIMENTO</td>
+                        <td>DESAPARECIDA</td>
+                        <td>RJ</td>
+                        <td>2678380</td>
+                        <td></td>
+                        <td>55u4y</td>
+                        <td>B</td>
+                        <td>
+                          <select class="form-control select2" style="width: 100%; max-width: 100px !important;">
+                            <option selected="selected">Pendente</option>
+                            <option>[1] Encaminhado à autoridade competente</option>
+                            <option>[2] Liberado ainda na abordagem policial</option>
+                          </select>
+                        </td>
+                      </tr>
+
+                      <tr data-ocorrencia="desaparecido">
+                        <td><span class="access-date text-gold">Aguardando...</span></td>
+                        <td><span class="document-cpf">042.120.931-38</span></td>
+                        <td><button class="btn btn-primary" type="button" data-toggle="modal"
+                            data-target="#modal-default" style="width: 120px;"><i class="fas fa-edit"></i> &nbsp;
+                            Detalhar</button></td>
+                        <td>
+                          <ul class="list-inline">
+                            <li class="list-inline-item">
+                              <img alt="Avatar" class="table-avatar" src="../dist/img/avatar.png">
+                            </li>
+                          </ul>
+                        </td>
+                        <td>MARCELO NOGUEIRA DE PADUA</td>
+                        <td>DESAPARECIDA</td>
+                        <td>SP</td>
+                        <td>2678380</td>
+                        <td></td>
+                        <td>55u4y</td>
+                        <td>B</td>
+                        <td>
+                          <select class="form-control select2" style="width: 100%; max-width: 100px !important;">
+                            <option selected="selected">Pendente</option>
+                            <option>[1] Encaminhado à autoridade competente</option>
+                            <option>[2] Liberado ainda na abordagem policial</option>
+                          </select>
+                        </td>
+                      </tr>
+
+                      <tr data-ocorrencia="impedido">
+                        <td><span class="access-date text-gold">Aguardando...</span></td>
+                        <td><span class="document-cpf">167.947.247-07</span></td>
+                        <td><button class="btn btn-primary" type="button" data-toggle="modal"
+                            data-target="#modal-default" style="width: 120px;"><i class="fas fa-edit"></i> &nbsp;
+                            Detalhar</button></td>
+                        <td>
+                          <ul class="list-inline">
+                            <li class="list-inline-item">
+                              <img alt="Avatar" class="table-avatar" src="../dist/img/avatar.png">
+                            </li>
+                          </ul>
+                        </td>
+                        <td>ALDOVANDER GUALBERTO DA SILVA JUNIOR</td>
+                        <td>IMPEDIDO</td>
+                        <td>RJ</td>
+                        <td>018-5458/2022</td>
+                        <td><a href="https://portalbnmp.cnj.jus.br/#/resumo-peca/196159607/1/pesquisa-peca">Abrir link</a></td>
+                        <td>4i7y4</td>
+                        <td>C</td>
+                        <td>
+                          <select class="form-control select2" style="width: 100%; max-width: 100px !important;">
+                            <option selected="selected">Pendente</option>
+                            <option>[1] Encaminhado à autoridade competente</option>
+                            <option>[2] Liberado ainda na abordagem policial</option>
+                          </select>
+                        </td>
+                      </tr>
+
+                      <tr data-ocorrencia="impedido">
+                        <td><span class="access-date text-gold">Aguardando...</span></td>
+                        <td><span class="document-cpf">188.818.247-44</span></td>
+                        <td><button class="btn btn-primary" type="button" data-toggle="modal"
+                            data-target="#modal-default" style="width: 120px;"><i class="fas fa-edit"></i> &nbsp;
+                            Detalhar</button></td>
+                        <td>
+                          <ul class="list-inline">
+                            <li class="list-inline-item">
+                              <img alt="Avatar" class="table-avatar" src="../dist/img/avatar.png">
+                            </li>
+                          </ul>
+                        </td>
+                        <td>ANGELO VICTOR SILETE CAMPOS</td>
+                        <td>IMPEDIDO</td>
+                        <td>RJ</td>
+                        <td>018-5458/2022</td>
+                        <td><a href="https://portalbnmp.cnj.jus.br/#/resumo-peca/196159607/1/pesquisa-peca">Abrir link</a></td>
+                        <td>yi87i7</td>
+                        <td>C</td>
+                        <td>
+                          <select class="form-control select2" style="width: 100%; max-width: 100px !important;">
+                            <option selected="selected">Pendente</option>
+                            <option>[1] Encaminhado à autoridade competente</option>
+                            <option>[2] Liberado ainda na abordagem policial</option>
+                          </select>
+                        </td>
+                      </tr>
+
+                      <tr data-ocorrencia="impedido">
+                        <td><span class="access-date text-gold">Aguardando...</span></td>
+                        <td><span class="document-cpf">109.163.687-77</span></td>
+                        <td><button class="btn btn-primary" type="button" data-toggle="modal"
+                            data-target="#modal-default" style="width: 120px;"><i class="fas fa-edit"></i> &nbsp;
+                            Detalhar</button></td>
+                        <td>
+                          <ul class="list-inline">
+                            <li class="list-inline-item">
+                              <img alt="Avatar" class="table-avatar" src="../dist/img/avatar.png">
+                            </li>
+                          </ul>
+                        </td>
+                        <td>GABRIELLA MARONI COELHO VALLE</td>
+                        <td>IMPEDIDO</td>
+                        <td>RJ</td>
+                        <td>0261736-95.2021.8.19.0001</td>
+                        <td><a href="https://portalbnmp.cnj.jus.br/#/resumo-peca/196159607/1/pesquisa-peca">Abrir link</a></td>
+                        <td>78y2</td>
+                        <td>C</td>
+                        <td>
+                          <select class="form-control select2" style="width: 100%; max-width: 100px !important;">
+                            <option selected="selected">Pendente</option>
+                            <option>[1] Encaminhado à autoridade competente</option>
+                            <option>[2] Liberado ainda na abordagem policial</option>
+                          </select>
+                        </td>
+                      </tr>
+
+
+                    </tbody>
+                    <tfoot>
+                      <tr>
+                        <th>Data/Hora</th>
+                        <th>Documento</th>
+                        <th>+Info</th>
+                        <th>Foto</th>
+                        <th>Nome/Descrição</th>
+                        <th>Ocorrência</th>
+                        <th>UF Mandado</th>
+                        <th>Nº Processo</th>
+                        <th>Link Mandado</th>
+                        <th>Nº Bilhete</th>
+                        <th>Portão</th>
+                        <th>Fechamento da Ocorrência</th>
+                      </tr>
+                    </tfoot>
+                  </table>
+                </div>
+                <!-- /.card-body -->
+              </div>
+            </div>
+          </div>
+        </div><!-- /.container-fluid -->
+      </section>
+      <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+    <footer class="main-footer">
+      <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong>
+      All rights reserved.
+      <div class="float-right d-none d-sm-inline-block">
+        <b>Version</b> 3.2.0
+      </div>
+    </footer>
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+      <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
+  </div>
+  <!-- ./wrapper -->
+
+  <div class="modal fade" id="modal-default">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">ROSILDO DOS SANTOS SILVA</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-12"><strong>Nome completo</strong></div>
+            <div class="col-md-12">ROSILDO DOS SANTOS SILVA</div>
+          </div>
+          <div class="row">
+            <div class="col-md-12"><strong>Endereço completo</strong></div>
+            <div class="col-md-12">Alameda Canário da Terra, 123 - PB</div>
+          </div>
+          <div class="row">
+            <div class="col-md-12"><strong>Idade</strong></div>
+            <div class="col-md-12">36 anos</div>
+          </div>
+          <div class="row">
+            <div class="col-md-12"><strong>CPF</strong></div>
+            <div class="col-md-12">092.982.804-67</div>
+          </div>
+        </div>
+        <div class="modal-footer justify-content-between">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+      <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+  </div>
+  <!-- /.modal -->
+
+  <!-- jQuery -->
+  <script src="../plugins/jquery/jquery.min.js"></script>
+  <!-- jQuery UI 1.11.4 -->
+  <script src="../plugins/jquery-ui/jquery-ui.min.js"></script>
+  <!-- Moment -->
+  <script src="../plugins/moment/moment-with-locales.min.js"></script>
+  <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+  <script>
+    $.widget.bridge('uibutton', $.ui.button)
+  </script>
+  <!-- Bootstrap 4 -->
+  <script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- DataTables  & Plugins -->
+  <script src="../plugins/datatables/jquery.dataTables.min.js"></script>
+  <script src="../plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+  <!-- Select2 -->
+  <script src="../plugins/select2/js/select2.full.min.js"></script>
+  <!-- AdminLTE App -->
+  <script src="../dist/js/adminlte.js"></script>
+
+  <script>
+    $(function () {
+
+      $("#table-ocorrencias").DataTable({
+      }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+    });
+
+    //Initialize Select2 Elements
+    $('.select2').select2()
+
+    $(document).ready(function () {
+      setInterval(function () {
+        // Selecionar uma linha aleatória da tabela
+        let $table = $("#table-ocorrencias");
+        let $rows = $table.find("tbody tr");
+        let randomRowIndex = Math.floor(Math.random() * $rows.length);
+        let $selectedRow = $rows.eq(randomRowIndex);
+
+        // Mover a linha selecionada para o topo da tabela
+        $selectedRow.insertBefore($rows.first());
+
+        // Inclui a classe highlight a tr selecionada
+        $selectedRow.addClass("highlight");
+
+        // Retorna o CPF da tr selecionada
+        let cpf = $selectedRow.find('.document-cpf').html();
+
+        const startDate = moment('2000-01-01');
+        const endDate = moment();
+        const randomDate = moment(startDate + Math.random() * (endDate - startDate));
+        const formattedDate = randomDate.format('DD/MM/YYYY HH:mm:ss');
+        // Exibir toast com base no valor do atributo data-ocorrencia
+        let ocorrencia = $selectedRow.attr("data-ocorrencia");
+        $selectedRow.find('.access-date').text(formattedDate).removeClass('text-gold');
+
+        if (ocorrencia === "procurado") {
+
+          $(document).Toasts('create', {
+            class: 'bg-danger',
+            title: 'Procurado',
+            subtitle: '12:26',
+            autohide: true,
+            delay: 6000,
+            body: `Mensagem do sistema. O usuário ${cpf} acesso o Estádio no Portão A.`
+          });
+
+        } else if (ocorrencia === "impedido") {
+
+          $(document).Toasts('create', {
+            class: 'bg-warning',
+            title: 'Impedido',
+            subtitle: '12:26',
+            autohide: true,
+            delay: 6000,
+            body: `Mensagem do sistema. O usuário ${cpf} acabou de ser impedido de acessar ao Estádio`
+          })
+
+        } else if (ocorrencia === "desaparecido") {
+
+          $(document).Toasts('create', {
+            class: 'bg-success',
+            title: 'Desaparecido',
+            subtitle: '12:26',
+            autohide: true,
+            delay: 6000,
+            body: `Mensagem do sistema. O usuário ${cpf} consta como DESAPARECIDO e acabou de acessar ao Estádio`
+          })
+
+        }
+
+        // Remover a classe de destaque após o efeito de fade
+        setTimeout(function () {
+          $selectedRow.removeClass("highlight");
+        }, 6000);
+
+      }, 5000); 
+    });
+  </script>
+
+</body>
+
+</html>
